@@ -1,0 +1,27 @@
+.Works{
+    margin-left: 30.3%;
+   height: 80vh;
+    width: 73vw;
+    align-content: center;
+    
+    
+}
+
+.Works p{
+    font-size: 20px;
+}
+
+.Projects{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Works {
+        
+   height: 100%;
+        width: 30vw;
+        align-content: center;
+    }
+  }

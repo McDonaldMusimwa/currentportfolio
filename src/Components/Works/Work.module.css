@@ -1,0 +1,27 @@
+.Card{
+   
+    height: 200px;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}  
+.Card img{
+    width: 60%;
+    object-fit: contain;
+}
+.Text{
+    width: 40%;
+    height: 100%;
+   padding-right: 10px;
+    text-align: left;
+    justify-content: space-around;
+}
+.Text img{
+width: 20px;
+} 
+.Text p{
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 1;
+}

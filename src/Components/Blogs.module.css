@@ -1,0 +1,19 @@
+.Blogs {
+  margin-left: 30.3%;
+
+  width: 100%;
+  align-content: center;
+}
+
+.Blogs>h2{
+    margin-left: 55%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Blogs {
+      
+ height: 100%;
+      width: 30vw;
+      align-content: center;
+  }
+}

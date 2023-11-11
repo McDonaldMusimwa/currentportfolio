@@ -1,0 +1,111 @@
+/* NavBar.module.css */
+
+.NavMain {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 15%; /* Adjust the width to your preference */
+  height: 100vh; /* Set the height to full viewport height */
+  background-color: #0f0f0f60; /* Set your desired background color */
+  text-align: left;
+  color: white;
+  padding: 20px;
+}
+
+.NavMain img {
+  width: 50px;
+  margin: 5px;
+  top: 5px;
+}
+
+.Name {
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.NavTop {
+  padding: 20px;
+  margin-top: 1.5rem; /* Adjust the margin-top to give space for NavBottom */
+}
+
+.NavTop a {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #e4e2e2;
+}
+
+.NavBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  z-index: 100;
+  margin-left: 10px;
+}
+
+.NavBottom a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  line-height: 0;
+}
+
+.NavBottom>span{
+  font-size: 15px;
+  line-height: 0;
+}
+.icon {
+  width: 40px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .NavMain {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%; /* Adjust the width to your preference */
+    height: 40vh; /* Set the height to full viewport height */
+    background-color: #0f0f0f60; /* Set your desired background color */
+    text-align: left;
+    color: white;
+    padding: 20px;
+  }
+  .NavMain img {
+    width: 20px;
+    margin: 5px;
+    top: 5px;
+  }
+  .NavTop {
+    padding:0 20px;
+    margin-top: 1.5rem; /* Adjust the margin-top to give space for NavBottom */
+  }
+  
+  .NavTop a {
+    display: block;
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: #e4e2e2;
+  }
+  .NavBottom {
+    position: absolute;
+   
+    margin-top: 1px;
+   
+    z-index: 100;
+   padding: 0 30px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    
+  }
+  .NavBottom>span{
+    font-size: 15px;
+    line-height: 0;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+}

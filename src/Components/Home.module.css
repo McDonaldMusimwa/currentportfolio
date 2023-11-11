@@ -1,0 +1,14 @@
+.Home {
+  margin-left: 30.5%;
+  width: 100%;
+  align-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .Home {
+    margin: 0;
+    height: 100%;
+width: 300px;
+    align-content: center;
+  }
+}

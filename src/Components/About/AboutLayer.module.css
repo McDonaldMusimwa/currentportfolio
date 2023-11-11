@@ -1,0 +1,70 @@
+.Aboutlayer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 90% 10%;
+  margin: 0 0 5% 5%;
+  width: 100%;
+}
+.Left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+}
+
+.Right {
+  width: 100%;
+  grid-column: 2/3;
+}
+.Profile {
+  width: 60%;
+}
+
+.Name {
+  width: 60%;
+}
+.Cv {
+  width: 30%;
+  margin: 10px 0 0 7rem;
+}
+
+.Contacts {
+  display: flex;
+  flex-direction: row;
+}
+.Contacts p {
+  margin: 15px;
+}
+.Info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px rgb(197, 197, 197) solid;
+}
+
+.Info span {
+  margin: 5px;
+}
+
+.Block {
+    margin: 30px 0 ;
+  background: black;
+  color: white;
+  padding: 5px;
+  height: 17vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 10px;
+}
+
+.Footer {
+  grid-column: 1/3;
+  height: 40px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 157),
+    rgb(255, 187, 0)
+  );
+}

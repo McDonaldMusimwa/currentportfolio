@@ -1,0 +1,16 @@
+.About{
+    margin-left: 19.3%;
+   
+    width: 75%;
+    align-content: center;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .About {
+        
+   height: 100%;
+        width: 30vw;
+        align-content: center;
+    }
+  }

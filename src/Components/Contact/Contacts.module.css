@@ -1,0 +1,69 @@
+.Contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10%;
+  width: 100%;
+  padding: 20px;
+  margin-left: 20%;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.Text span{
+    margin: 15px 0;
+    font-size: 30px;
+}
+.Text p{
+    line-height: 0;
+    font-size: 20px;
+}
+.form {
+  background: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36));
+  padding: 30px;
+  width: 400px; /* Adjust the width as needed */
+}
+
+.form h2 {
+  color: white; /* Set the text color for the heading */
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: white; /* Set the color for the placeholder text */
+}
+.form input,
+.form textarea {
+  display: inline;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid white; /* Add a bottom border */
+  background: transparent; /* Make the background transparent */
+  color: rgb(255, 255, 255); /* Set the text color */
+}
+
+.form button {
+  background: white; /* Set the button background color */
+  color: #333; /* Set the button text color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.form button > img {
+  width: 10px;
+}
+
+.Socials {
+    margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Socials a {
+  text-decoration: none;
+  color: black;
+}
