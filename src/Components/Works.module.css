@@ -1,27 +1,38 @@
-.Works{
-    margin-left: 30.3%;
-   height: 80vh;
-    width: 73vw;
-    align-content: center;
-    
-    
+.Works {
+  margin-left: 30.3%;
+  height: 80vh;
+  width: 73vw;
+  align-content: center;
 }
 
-.Works p{
-    font-size: 20px;
+.Works p {
+  font-size: 20px;
 }
 
-.Projects{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 50px;
+.Projects {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 50px;
 }
 
-@media only screen and (max-width: 600px) {
-    .Works {
-        
-   height: 100%;
-        width: 30vw;
-        align-content: center;
-    }
+@media only screen and (max-width: 768px) {
+  .Works {
+    margin: 70px 0; /* Remove left margin for smaller screens */
+    width: 95vw; /* Full width for smaller screens */
+    height: auto; /* Adjust height as needed for responsiveness */
   }
+
+  .Works p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .Projects {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+}
+
+/* For screens between 769px and 1024px (e.g., larger tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Add specific styles for tablets if needed */
+}

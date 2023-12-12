@@ -1,27 +1,60 @@
-.Card{
-   
-    height: 200px;
-    width: 450px;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-}  
-.Card img{
-    width: 60%;
-    object-fit: contain;
+.Card {
+  height: 200px;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
 }
-.Text{
-    width: 40%;
-    height: 100%;
-   padding-right: 10px;
-    text-align: left;
-    justify-content: space-around;
+.Card img {
+  width: 60%;
+  object-fit: contain;
 }
-.Text img{
-width: 20px;
-} 
-.Text p{
-    font-size: 20px;
-    font-weight: bolder;
-    line-height: 1;
+.Text {
+  width: 40%;
+  height: 100%;
+  padding-right: 10px;
+  text-align: left;
+  justify-content: space-around;
+}
+.Text img {
+  width: 20px;
+}
+.Text p {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+/* For screens smaller than 768px (e.g., tablets and mobile) */
+@media only screen and (max-width: 768px) {
+  .Card {
+    margin: 10px 15px;
+    height: auto; /* Adjust height as needed for responsiveness */
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: column; /* Stack items vertically for smaller screens */
+  }
+
+  .Card img {
+    width: 100%; /* Full width for the image on smaller screens */
+  }
+
+  .Text {
+    width: 100%; /* Full width for the text on smaller screens */
+    height: auto; /* Adjust height as needed for responsiveness */
+    padding-right: 0; /* Remove padding on smaller screens */
+    justify-content: center; /* Center content vertically on smaller screens */
+  }
+
+  .Text img {
+    width: 15px; /* Adjust image size for smaller screens */
+  }
+
+  .Text p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* For screens between 769px and 1024px (e.g., larger tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Add specific styles for tablets if needed */
 }

@@ -3,7 +3,7 @@ import PhpMotors from "./phpmotors.jpeg";
 import EShop from "./eshop.jpeg";
 import Gym from "./gym.jpeg";
 import Calculator from "./calculator.jpeg";
-import Bug from "../assets/Bug.jpg";
+import Bug from "../assets/bug.jpg";
 import coding from "../assets/coding.jpg";
 import techbusiness from "../assets/techbusiness.jpg";
 export let colors = ["rgb(247,183,51)", "rgb(252,74,25)"];
@@ -93,21 +93,21 @@ const info = {
   poetry: `"Code weaves the fabric of innovation, where logic dances with creativity, and bugs, mere whispers in the symphony of creation, are conquered by the tenacity of a determined mind."`,
   skills: [
     {
-      key:1,
+      key: 1,
       title: "Languages",
       techs: ["Java", "javascript", "python", "sql", "html", "css"],
       description:
         "I have worked different languages and i am always excited to learn more and expand.Open to see my regular go too languages.",
     },
     {
-      key:2,
+      key: 2,
       title: "Frameworks",
       techs: ["react js", "node js", "express js"],
       description:
         "I enjoy learning different frameworks and libraries and see their different capabilities i am always open to lean a new piece of tech.Open to see my regular go too frameworks or libraries.",
     },
     {
-      key:3,
+      key: 3,
       title: "Tools",
       techs: ["github", "mysql", "apache", "mongodb", "Vite"],
       description:

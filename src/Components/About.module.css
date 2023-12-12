@@ -1,16 +1,19 @@
-.About{
-    margin-left: 19.3%;
-   
-    width: 75%;
-    align-content: center;
-    
+.About {
+  margin-left: 19.3%;
+
+  width: 75%;
+  align-content: center;
 }
 
 @media only screen and (max-width: 600px) {
-    .About {
-        
-   height: 100%;
-        width: 30vw;
-        align-content: center;
-    }
+  * {
+    overflow-x: hidden;
   }
+  .About {
+    margin: 40px 0 0 0;
+    height: 100%;
+    width: 100vw;
+    padding: 5px;
+    align-content: center;
+  }
+}

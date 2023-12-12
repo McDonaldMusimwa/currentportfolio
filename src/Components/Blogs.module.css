@@ -5,15 +5,27 @@
   align-content: center;
 }
 
-.Blogs>h2{
-    margin-left: 55%;
+.Blogs > h2 {
+  margin: 20% 20%;
 }
+@media (max-width: 480px) {
+  .Blogs {
+    margin: 60px auto;
+    width: 100%;
+  }
 
+  h2 {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .Blogs {
-      
- height: 100%;
-      width: 30vw;
-      align-content: center;
+    height: 100%;
+    margin: 60px auto;
+    align-content: center;
+    width: 100vw;
+  }
+  h2 {
+    font-size: 20px;
   }
 }

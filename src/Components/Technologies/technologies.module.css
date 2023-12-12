@@ -1,7 +1,33 @@
-.Technologies{
+.Technologies {
+  width: 100%;
+}
 
-width: 100%;}
+.Technologies > h2 {
+  font-size: 30px;
+}
 
-.Technologies>h2{
+@media only screen and (max-width: 600px) {
+  .Technologies {
+    margin: 70px 0;
+    width: 100%;
+  }
+  .Technologies > h2 {
     font-size: 30px;
+
+    margin: 10px 10% 20px;
+  }
+  .techs {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Technologies {
+    margin: 70px 0;
+    width: 100%;
+  }
+  .techs {
+    padding: 10px;
+  }
 }

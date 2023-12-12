@@ -1,26 +1,59 @@
-.TechItem{
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    border-bottom: 1px gray solid;
-    margin-bottom: 10px;
-    gap: 20px;
+.TechItem {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  border-bottom: 1px gray solid;
+  margin-bottom: 10px;
+  gap: 20px;
 }
-.TechItem >div{
-    margin: 0 30px;
+.TechItem > div {
+  margin: 0 30px;
+  padding: 20px;
+}
+h3 {
+  font-size: 25px;
+}
+
+h3 > img {
+  width: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.Click {
+  margin-top: 30px;
+  width: 50px;
+}
+
+/* For screens smaller than 600px (e.g., mobile) */
+@media only screen and (max-width: 600px) {
+  .TechItem {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .TechItem > div {
+    margin: 0;
+    padding: 5px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 10px; /* Adjust font size for mobile */
+  }
+
+  h3 > img {
+    width: 15px; /* Adjust image size for mobile */
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .Click {
+    margin: 20px 10px;
+    width: 40px; /* Adjust width for mobile */
     padding: 20px;
-}
-h3{
-    font-size: 25px;
-    
+  }
 }
 
-h3>img{
-    width: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.Click{
-    margin-top: 30px;
-    width: 50px;
+/* For screens between 600px and 1024px (e.g., tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Add specific styles for tablets if needed */
 }
