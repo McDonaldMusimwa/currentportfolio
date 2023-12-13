@@ -1,5 +1,5 @@
 import self from "./self.png";
-import PhpMotors from "./phpmotors.jpeg";
+import stockifyGif from "./StockGif.gif";
 import EShop from "./eshop.jpeg";
 import Gym from "./gym.jpeg";
 import Calculator from "./calculator.jpeg";
@@ -135,10 +135,10 @@ const info = {
   portfolio: [
     // This is where your portfolio projects will be detailed
     {
-      title: "PHP Motors Not yet live",
-      live: "https://github.com/McDonaldMusimwa/phpmotor", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: "https://github.com/McDonaldMusimwa/phpmotors", // this should be a link to the **repository** of the project, where the code is hosted.
-      image: PhpMotors,
+      title: "Stock management",
+      live: "https://mcdonaldmusimwa.github.io/stockifylandingpage/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+      source: "https://mcdonaldmusimwa.github.io/stockifylandingpage/", // this should be a link to the **repository** of the project, where the code is hosted.
+      image: stockifyGif,
       key: 1,
     },
     {
