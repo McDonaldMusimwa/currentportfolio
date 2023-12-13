@@ -8,9 +8,10 @@
 /* Media Query for Tablets */
 @media (max-width: 768px) {
   .Blog {
+    width: 100%;
     margin-top: 50px;
     grid-template-columns: 100%; /* Display a single column for tablets */
-    margin-left: 0; /* Remove left margin for tablets */
+    margin-left: 10px; /* Remove left margin for tablets */
     gap: 20px; /* Adjust gap for tablets */
   }
 }
@@ -18,6 +19,7 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .Blog {
+    width: 100%;
     margin-top: 50px;
     grid-template-columns: 100%; /* Display a single column for mobile devices */
     margin-left: 0; /* Remove left margin for mobile devices */
