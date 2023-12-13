@@ -10,7 +10,7 @@ const Contacts = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(e);
+    setActive(true)
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICEID,
@@ -26,6 +26,7 @@ const Contacts = () => {
           console.log(error.text);
         },
       );
+      setActive(false)
     e.target.reset();
   };
   return (
@@ -64,7 +65,7 @@ const Contacts = () => {
           id="clientText"
           placeholder="Message"
         ></textarea>
-        <button className={styles.ContactButton}>
+        <button className={styles.ContactButton} onTouchStart={sendEmail}>
           {active ? "Sending..." : " Send Message"}
           <img src={arrow} alt="arrow" />
         </button>

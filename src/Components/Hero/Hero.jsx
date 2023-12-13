@@ -27,7 +27,13 @@ const Hero = () => {
             <strong>Software developer </strong>based in{" "}
             <strong>CapeTown</strong>
           </div>
-          <img className={styles.ContactMe} src={button} alt="button" onClick={navigateToContact} />
+          <img
+            className={styles.ContactMe}
+            src={button}
+            alt="button"
+            onClick={navigateToContact}
+            onTouchStart={navigateToContact}
+          />
           <div className={styles.contacts}>
             <p>
               📱 <strong>+27 67 103 3055</strong>
