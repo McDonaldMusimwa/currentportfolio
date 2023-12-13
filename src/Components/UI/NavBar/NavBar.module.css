@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
 .headermenu {
   /* ... Other styles ... */
+  
   position: fixed;
   left: 0;
   top: 0;
@@ -95,9 +96,9 @@
     align-items: center;
     background-color: black;
   }
-  Name {
-    margin-left: 50%;
-    font-size: 35px;
+  .Name {
+    margin-left: 45%;
+    font-size: 25px;
   }
 
   .headermenu.is-open {

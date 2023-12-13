@@ -71,14 +71,19 @@
   .Pa {
     z-index: -100;
     position: relative;
-    flex-direction: column; /* Change to a column layout on smaller screens */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
   }
 
   .Hero {
+    grid-row: 2/3;
     height: auto;
     width: 90%; /* Adjust width as needed for smaller screens */
   }
-
+  .Image {
+    grid-row: 1/2;
+  }
   .Hero img {
     width: 100%; /* Adjust image width for smaller screens */
   }
