@@ -5,7 +5,16 @@ import profile from "../../assets/Img.png";
 import titleimg from "../../assets/Titleimg.png";
 import button from "../../assets/ButtonCv.png";
 import collon from "../../assets/collon.png";
+//import McDonaldCv from "../../assets/McDonaldMusimwa.pdf";
 const AboutLayer = () => {
+  const downloadCv = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "../../assets/McDonaldMusimwa.pdf";
+    downloadLink.download = "McDonaldMusimwa_CV.pdf"; // Set the desired name for the downloaded file
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
   return (
     <>
       <div className={styles.Aboutlayer}>
@@ -18,7 +27,12 @@ const AboutLayer = () => {
           </span>
           <img src={profile} alt="profile" className={styles.Profile} />
           <img src={titleimg} alt="titleimage" className={styles.Name} />
-          <img src={button} alt="button" className={styles.Cv} />
+          <img
+            src={button}
+            alt="button"
+            className={styles.Cv}
+            onClick={downloadCv}
+          />
         </div>
         <div className={styles.Right}>
           <div className={styles.Contacts}>

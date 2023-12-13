@@ -12,13 +12,13 @@
   flex-direction: column;
   padding: 10px;
 }
-.Text span{
-    margin: 15px 0;
-    font-size: 30px;
+.Text span {
+  margin: 15px 0;
+  font-size: 30px;
 }
-.Text p{
-    line-height: 0;
-    font-size: 20px;
+.Text p {
+  line-height: 0;
+  font-size: 20px;
 }
 .form {
   background: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36));
@@ -58,7 +58,7 @@
 }
 
 .Socials {
-    margin-top: 40px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,4 +66,57 @@
 .Socials a {
   text-decoration: none;
   color: black;
+  border-bottom: 1px black solid;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  h2,
+  h3 {
+    overflow: hidden;
+    font-size: 15px;
+    margin: 1px 0;
+  }
+  .Contact {
+    overflow-y: hidden;
+
+    width: 95%;
+    padding: 5px;
+    grid-template-columns: 100%; /* Change to a single column layout on smaller screens */
+    gap: 5%; /* Adjust gap for smaller screens */
+    margin: 10px auto 5px; /* Remove left margin for full-width on smaller screens */
+  }
+  .Text {
+    height: 100%;
+  }
+  .Text span {
+    margin: 5px 0;
+    color: black;
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .Text p {
+    overflow-y: hidden;
+    line-height: 1;
+    color: black;
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin: 3px; /* Add margin for spacing */
+  }
+
+  .form {
+    margin-top: 10px;
+    height: 50vh;
+    padding: 5px;
+    width: 98%; /* Adjust the form width for full-width on smaller screens */
+  }
+  .Socials {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Socials a {
+    text-decoration: none;
+    color: black;
+  }
 }

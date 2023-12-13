@@ -1,12 +1,10 @@
 .Blogs {
-  margin-left: 30.3%;
-
-  width: 100%;
+  margin-left: 10.3%;
   align-content: center;
 }
 
 .Blogs > h2 {
-  margin: 20% 20%;
+  margin: 5% 20%;
 }
 @media (max-width: 480px) {
   .Blogs {

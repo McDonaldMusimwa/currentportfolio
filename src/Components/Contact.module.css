@@ -1,15 +1,18 @@
 .Contact {
-    margin-left: 30.5%;
-    width: 100%;
-    height: 80vh;
-    align-content: center;
+  margin-left: 30.5%;
+  width: 100%;
+  height: 80vh;
+  align-content: center;
 }
 @media only screen and (max-width: 600px) {
-    .Blogs {
-        
-   height: 100%;
-        width: 50vw;
-        height: 80vh;
-        align-content: center;
-    }
+  * {
+    overflow-x: hidden;
   }
+  .Contact {
+    margin: 70px auto;
+    height: 100vh;
+    width: 100%;
+
+    align-content: center;
+  }
+}

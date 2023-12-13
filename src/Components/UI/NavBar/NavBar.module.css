@@ -31,14 +31,25 @@
   padding: 20px;
   margin-top: 1.5rem; /* Adjust the margin-top to give space for NavBottom */
 }
-
+.NavTop > h2 {
+  font-family: "Whisper", cursive;
+}
+.NavTop > h2:hover {
+  cursor: pointer;
+}
 .NavTop a {
   display: block;
   margin-bottom: 20px;
   text-decoration: none;
   color: #e4e2e2;
 }
-
+.NavTop a.active {
+  text-decoration: line-through;
+  background-image: linear-gradient(to right, rgb(236, 31, 8), red);
+  -webkit-background-clip: text;
+  color: transparent;
+  /* Add your desired text decoration for active links */
+}
 .NavBottom {
   position: absolute;
   bottom: 0;
@@ -46,19 +57,22 @@
   padding: 30px;
   z-index: 100;
   margin-left: 10px;
+  background-color: white;
+  width: 12vw;
 }
 
 .NavBottom a {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  color: #faf8f8;
+  color: #0b0b0b;
   line-height: 0;
 }
 
 .NavBottom > span {
   font-size: 15px;
   line-height: 0;
+  color: black;
 }
 .icon {
   width: 40px;
@@ -113,7 +127,9 @@
     padding: 0 20px;
     margin-top: 1.5rem; /* Adjust the margin-top to give space for NavBottom */
   }
-
+  .NavTop > h2 {
+    display: none;
+  }
   .NavTop a {
     display: block;
     margin-bottom: 2px;

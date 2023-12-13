@@ -26,7 +26,11 @@
 }
 .Cv {
   width: 30%;
-  margin: 10px 0 0 7rem;
+  margin: 10px 0 0 5rem;
+}
+
+.Cv:hover {
+  cursor: pointer;
 }
 
 .Contacts {
@@ -87,6 +91,10 @@
 
   .Cv {
     margin: 10px 0; /* Adjust margin for spacing on smaller screens */
+  }
+
+  .Cv:hover {
+    cursor: pointer;
   }
 
   .Contacts {

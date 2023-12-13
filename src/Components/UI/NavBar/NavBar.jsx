@@ -4,11 +4,16 @@ import linkedin from "../../../assets/linkedin.png";
 import twitter from "../../../assets/twitter.png";
 import youtube from "../../../assets/youtube.png";
 import Bars from "../../../assets/bars.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [menuOpened, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate("/");
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -51,22 +56,47 @@ const NavBar = () => {
           }`}
         >
           <ul className={styles.NavTop}>
-            <NavLink onClick={() => setMenuOpen(false)} to="/">
+            <h2 onClick={navigateToHome}>McDonald.</h2>
+            <NavLink
+              onClick={() => setMenuOpen(!menuOpened)}
+              to="/"
+              className={({ isActive }) => isActive ? styles.active : undefined}
+            >
               Home
             </NavLink>
-            <NavLink onClick={() => setMenuOpen(false)} to="about">
+            <NavLink
+              onClick={() => setMenuOpen(!menuOpened)}
+              to="about"
+              className={({ isActive }) => isActive ? styles.active : undefined}
+            >
               About
             </NavLink>
-            <NavLink onClick={() => setMenuOpen(false)} to="services">
+            <NavLink
+              onClick={() => setMenuOpen(!menuOpened)}
+              to="services"
+              className={({ isActive }) => isActive ? styles.active : undefined}
+            >
               Technologies
             </NavLink>
-            <NavLink onClick={() => setMenuOpen(false)} to="works">
+            <NavLink
+              onClick={() => setMenuOpen(!menuOpened)}
+              to="works"
+              className={({ isActive }) => isActive ? styles.active : undefined}
+            >
               Works
             </NavLink>
-            <NavLink onClick={() => setMenuOpen(false)} to="blogs">
+            <NavLink
+              onClick={() => setMenuOpen(!menuOpened)}
+              to="blogs"
+              className={({ isActive }) => isActive ? styles.active : undefined}
+            >
               Blogs
             </NavLink>
-            <NavLink onClick={() => setMenuOpen(false)} to="contacts">
+            <NavLink
+              onClick={() => setMenuOpen(!menuOpened)}
+              to="contacts"
+              className={({ isActive }) => isActive ? styles.active : undefined}
+            >
               Contacts
             </NavLink>
           </ul>
@@ -93,7 +123,8 @@ const NavBar = () => {
               <img className={styles.icon} src={youtube} alt="YouTube" />
             </a>
             <span className={styles.Copyright}>
-              Copyright © 2023 McDonald Musimwa.
+              Copyright © 2023
+              <br /> McDonald Musimwa.
             </span>
           </ul>
         </div>

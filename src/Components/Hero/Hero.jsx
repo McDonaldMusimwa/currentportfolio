@@ -1,4 +1,4 @@
-//import React from 'react'
+import { useNavigate } from "react-router-dom";
 import vector from "../../assets/Vector.png";
 import button from "../../assets/Button.png";
 import styles from "./Hero.module.css";
@@ -9,6 +9,10 @@ import youtube from "../../assets/youtube.png";
 import line from "../../assets/Line.png";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const navigateToContact = () => {
+    navigate("/contacts");
+  };
   return (
     <div className={styles.Pa}>
       <div className={styles.Hero}>
@@ -23,7 +27,7 @@ const Hero = () => {
             <strong>Software developer </strong>based in{" "}
             <strong>CapeTown</strong>
           </div>
-          <img src={button} alt="button" />
+          <img className={styles.ContactMe} src={button} alt="button" onClick={navigateToContact} />
           <div className={styles.contacts}>
             <p>
               📱 <strong>+27 67 103 3055</strong>
