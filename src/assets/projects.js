@@ -1,10 +1,11 @@
 import self from "./self.png";
 import stockifyGif from "./StockGif.gif";
 import EShop from "./eshop.jpeg";
-import Gym from "./gym.jpeg";
+import Gym from "./gym.gif";
 import Calculator from "./calculator.jpeg";
 import Bug from "../assets/bug.jpg";
 import coding from "../assets/coding.jpg";
+import Crush from "../assets/crush.jpeg";
 import techbusiness from "../assets/techbusiness.jpg";
 export let colors = ["rgb(247,183,51)", "rgb(252,74,25)"];
 // export let colors = ["rgb(0,255,0)", "rgb(0,225,255)"];
@@ -67,6 +68,13 @@ const info = {
   ],
   posts: [
     {
+      key:4,
+      title:"A glance at Software Testing",
+      date:"December 14 2023",
+      image:Crush,
+      link:"https://www.linkedin.com/pulse/glance-software-testing-mcdonald-musimwa-dff8f%3FtrackingId=yAuvUI%252FeQ7W4qIRMQQHDBA%253D%253D/?trackingId=yAuvUI%2FeQ7W4qIRMQQHDBA%3D%3D"
+    },
+    {
       key: 1,
       title: "Bug Report",
       date: "November 10 2023",
@@ -88,30 +96,30 @@ const info = {
       link: "https://www.linkedin.com/pulse/transforming-business-landscape-navigating-evolving-realm-musimwa/?trackingId=e0%2Fkk0efR8iVb4umO8Jdpg%3D%3D",
     },
   ],
-  bio: "Hello there! I'm McDonald, a Full Stack JavaScript Developer with experience in a wide range of technologies and frameworks. I specialize in building user-driven web applications and websites that are both functional and aesthetically pleasing. Some of my notable projects include phonebook api, ecommerce shop, which showcase my skills in web services, node js, and database intergration.What sets me apart from other developers is my diverse background .",
-  bio2: "I have horned my through on solo projects as well as collaborative ones, and I have experience in fields such as marketing and design. This unique perspective allows me to approach development challenges from multiple angles, resulting in more creative and effective solutions. I'm always eager to take on new challenges and collaborate with other passionate individuals - let's build something great together!",
-  poetry: `"Code weaves the fabric of innovation, where logic dances with creativity, and bugs, mere whispers in the symphony of creation, are conquered by the tenacity of a determined mind."`,
+  bio: "Hello there! I'm McDonald, a Developer that loves backend but not afraid to dable with some front end .I have experience in a wide range of technologies and frameworks. I specialize in building user-driven web applications and websites that are both functional and aesthetically pleasing. Some of my recent notable projects include task management web application, stock management web application, these showcase my skills in web services,front end, and database intergration.What sets me apart from other developers is my diverse background .",
+  bio2: "I have horned my through on solo projects as well as collaborative ones, and I have experience in fields such as accounting and marketing. This unique perspective allows me to approach development challenges from multiple angles, resulting in more creative and effective solutions. I'm always eager to take on new challenges and collaborate with other passionate individuals - let's build something great together!",
+  poetry: `"Code weaves the fabric of innovation, where logic dances with creativity, bugs are a mere whispers in the symphony of creation and are conquered by the tenacity of a determined mind."`,
   skills: [
     {
       key: 1,
       title: "Languages",
-      techs: ["Java", "javascript", "python", "sql", "html", "css"],
+      techs: ["java", "javascript", "python", "sql", "html", "css"],
       description:
-        "I have worked different languages and i am always excited to learn more and expand.Open to see my regular go too languages.",
+        "I have worked with different languages and i am always excited to learn more and expand.Open to see my regular go too languages.",
     },
     {
       key: 2,
       title: "Frameworks",
-      techs: ["react js", "node js", "express js"],
+      techs: ["react js", "node js", "express js","springboot"],
       description:
         "I enjoy learning different frameworks and libraries and see their different capabilities i am always open to lean a new piece of tech.Open to see my regular go too frameworks or libraries.",
     },
     {
       key: 3,
       title: "Tools",
-      techs: ["github", "mysql", "apache", "mongodb", "Vite"],
+      techs: ["github", "mysql", "apache", "mongodb", "vite","sqlite"],
       description:
-        "Tools are a way to make development life easy ,i always use the common in the maarket but always up to grab a new tool.",
+        "Tools are a way to make development life easy ,i always use the common in the market but always up to grab a new tool.",
     },
   ],
   hobbies: [

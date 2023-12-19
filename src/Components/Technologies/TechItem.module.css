@@ -11,6 +11,9 @@
 }
 h3 {
   font-size: 25px;
+  background-image: linear-gradient(to right, rgb(182, 2, 128), rgb(255, 187, 0));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 h3 > img {

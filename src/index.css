@@ -63,3 +63,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 14px; /* Adjust font size for smaller screens if needed */
+  }
+  body {
+    flex-direction: column;
+  }
+  button {
+    width: 100%; /* Make buttons full width on smaller screens */
+  }
+}

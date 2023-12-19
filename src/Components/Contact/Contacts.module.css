@@ -71,12 +71,31 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
+  .Contact {
+    
+    gap: 10%;
+    width: 100%;
+    padding: 20px;
+   
+  }
   h2,
   h3 {
     overflow: hidden;
     font-size: 15px;
     margin: 1px 0;
   }
+
+  .form input,
+.form textarea {
+  display: inline;
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid white; /* Add a bottom border */
+  background: transparent; /* Make the background transparent */
+  color: rgb(255, 255, 255); /* Set the text color */
+}
   .Contact {
     overflow-y: hidden;
 

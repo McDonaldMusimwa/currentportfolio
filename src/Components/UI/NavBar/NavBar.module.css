@@ -46,7 +46,7 @@
 }
 .NavTop a.active {
   text-decoration: line-through;
-  background-image: linear-gradient(to right, rgb(236, 31, 8), red);
+  background-image: linear-gradient(to right, rgb(247, 4, 174), rgb(255, 166, 0));
   -webkit-background-clip: text;
   color: transparent;
   /* Add your desired text decoration for active links */
@@ -97,7 +97,7 @@
     background-color: black;
   }
   .Name {
-    margin-left: 45%;
+    margin-left: 40%;
     font-size: 25px;
   }
 
