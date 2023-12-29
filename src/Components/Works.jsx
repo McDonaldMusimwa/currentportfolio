@@ -6,7 +6,7 @@ const Works = () => {
   return (
     <div className={styles.Works}>
       <strong>
-        <h3>Fruits of my labour</h3>
+        <h3>Project Experience</h3>
       </strong>
       <div className={styles.Projects}>
         {info.portfolio.map((project) => {

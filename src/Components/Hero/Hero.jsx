@@ -11,6 +11,7 @@ import line from "../../assets/Line.png";
 const Hero = () => {
   const navigate = useNavigate();
   const navigateToContact = () => {
+    console.log('activated')
     navigate("/contacts");
   };
   return (
@@ -32,7 +33,8 @@ const Hero = () => {
             src={button}
             alt="button"
             onClick={navigateToContact}
-            onTouchStart={navigateToContact}
+         
+            
           />
           <div className={styles.contacts}>
             <p>

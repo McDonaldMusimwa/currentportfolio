@@ -36,8 +36,8 @@ const Contacts = () => {
         <span>
           <h3>Reach Out to me</h3>
         </span>
-        <p>+27 67 103 3055</p>
-        <p>mcdonald.musimwa100@gmail.com</p>
+        <p>📱 +27 67 103 3055</p>
+        <p>📧 mcdonald.musimwa100@gmail.com</p>
         <div className={styles.Socials}>
           {Data.socials.map((social) => {
             return (

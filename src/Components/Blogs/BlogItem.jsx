@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './BlogItem.module.css';
 
 const BlogItem = (props) => {
-    console.log(props)
+  
     return (
         <div className={styles.Blog}>
             <div className={styles.image}><img src={props.image} alt={props.title} /></div>

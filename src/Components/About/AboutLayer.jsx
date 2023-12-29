@@ -5,11 +5,11 @@ import profile from "../../assets/Img.png";
 import titleimg from "../../assets/Titleimg.png";
 import button from "../../assets/ButtonCv.png";
 import collon from "../../assets/collon.png";
-//import McDonaldCv from "../../assets/McDonaldMusimwa.pdf";
+import McDonaldCv from "../../assets/McDonaldMusimwa_CV.pdf";
 const AboutLayer = () => {
   const downloadCv = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "../../assets/McDonaldMusimwa.pdf";
+    downloadLink.href = McDonaldCv;
     downloadLink.download = "McDonaldMusimwa_CV.pdf"; // Set the desired name for the downloaded file
     document.body.appendChild(downloadLink);
     downloadLink.click();

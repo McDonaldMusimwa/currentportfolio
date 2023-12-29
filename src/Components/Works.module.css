@@ -17,8 +17,10 @@
 
 @media only screen and (max-width: 768px) {
   .Works {
+    overflow-y: hidden;
+    padding: 10px;
     margin: 70px 0; /* Remove left margin for smaller screens */
-    width: 95vw; /* Full width for smaller screens */
+    width: 93%; /* Full width for smaller screens */
     height: auto; /* Adjust height as needed for responsiveness */
   }
 
