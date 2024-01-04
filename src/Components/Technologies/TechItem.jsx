@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import PlusCircle from '../../assets/PlusCircle.png';
-import MinusCircle from '../../assets/MinusCircle.png';
-import dot from '../../assets/dot.png';
-import styles from './TechItem.module.css';
-import PropTypes from 'prop-types';
+import { useState } from "react";
+import PlusCircle from "../../assets/PlusCircle.png";
+import MinusCircle from "../../assets/MinusCircle.png";
+import dot from "../../assets/dot.png";
+import styles from "./TechItem.module.css";
+import PropTypes from "prop-types";
 
 const TechItem = (props) => {
   const [table, setTable] = useState(false);
@@ -26,12 +26,46 @@ const TechItem = (props) => {
       </h3>
       <div>
         {props.description}
-        <div className={styles.List}>{table ? techList : null}</div>
+
+        {table && (
+          <span
+            style={{
+              borderBottom: "1px solid",
+              borderBottomColor: "linear-gradient(90deg, purple, red)",
+              paddingBottom: "5px",
+              marginBottom: "10px",
+              display: "inline-block",
+            }}
+          ></span>
+        )}
+
+        <div className={styles.List}>
+        <p
+            style={{
+              borderBottom: "1px solid",
+              borderBottomColor: "linear-gradient(90deg, purple, red)",
+              paddingBottom: "5px",
+              marginBottom: "10px",
+              display: "block",
+            }}
+          ></p>
+          
+          {table ? techList : null}</div>
       </div>
       {table ? (
-        <img className={styles.Click} src={MinusCircle} alt="click" onClick={TableHandler().close} />
+        <img
+          className={styles.Click}
+          src={MinusCircle}
+          alt="click"
+          onClick={TableHandler().close}
+        />
       ) : (
-        <img className={styles.Click} src={PlusCircle} alt="click" onClick={TableHandler().open} />
+        <img
+          className={styles.Click}
+          src={PlusCircle}
+          alt="click"
+          onClick={TableHandler().open}
+        />
       )}
     </div>
   );

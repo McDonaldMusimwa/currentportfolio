@@ -1,9 +1,35 @@
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0); /* Start and end with no translation */
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px); /* Move left during these keyframes */
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px); /* Move right during these keyframes */
+  }
+}
 .Card {
+  background-color: #9898982c;
+  border-radius: 5px;
+  padding: 20px;
   height: 200px;
   width: 450px;
   display: flex;
   flex-direction: row;
   text-align: left;
+  transition: transform 0.5s ease;
+}
+.Card:hover {
+  animation: shake 0.1s;
 }
 .Card img {
   width: 60%;
@@ -33,7 +59,9 @@
     width: 100%; /* Full width for smaller screens */
     flex-direction: column; /* Stack items vertically for smaller screens */
   }
-
+  .Card:hover {
+    transition: z-index 0.3s ease;
+  }
   .Card img {
     width: 100%; /* Full width for the image on smaller screens */
   }
