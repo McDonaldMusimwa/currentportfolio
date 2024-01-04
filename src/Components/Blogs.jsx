@@ -3,7 +3,7 @@ import Blog from './Blogs/Blog';
 const Blogs = () => {
   return (
     <div className={styles.Blogs}>
-      <h2>Read my Post/Blogs</h2>
+      <h3>Read my Post/Blogs</h3>
       <Blog />
     </div>
   )

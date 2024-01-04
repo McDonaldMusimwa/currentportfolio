@@ -27,29 +27,24 @@ const TechItem = (props) => {
       <div>
         {props.description}
 
-        {table && (
+        <div className={styles.List}>
+        
+          {table ? (
           <span
             style={{
-              borderBottom: "1px solid",
-              borderBottomColor: "linear-gradient(90deg, purple, red)",
+              
+              borderColor: "linear-gradient(90deg, purple, red)",
+              backgroundImage: "linear-gradient(to right, purple , orange)",
               paddingBottom: "5px",
               marginBottom: "10px",
               display: "inline-block",
+              width: "100%", // Ensure the span takes full width
             }}
-          ></span>
-        )}
+          >
 
-        <div className={styles.List}>
-        <p
-            style={{
-              borderBottom: "1px solid",
-              borderBottomColor: "linear-gradient(90deg, purple, red)",
-              paddingBottom: "5px",
-              marginBottom: "10px",
-              display: "block",
-            }}
-          ></p>
+            
           
+          </span>):null}
           {table ? techList : null}</div>
       </div>
       {table ? (

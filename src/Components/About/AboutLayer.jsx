@@ -21,9 +21,9 @@ const AboutLayer = () => {
         <div className={styles.Left}>
           <span>
             Nice to meet you!{" "}
-            <p>
-              <strong>Welcome too ...</strong>{" "}
-            </p>
+            <h3>
+              <strong>Welcome to ...</strong>{" "}
+            </h3>
           </span>
           <img src={profile} alt="profile" className={styles.Profile} />
           <img src={titleimg} alt="titleimage" className={styles.Name} />

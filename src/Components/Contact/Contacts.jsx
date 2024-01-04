@@ -32,7 +32,7 @@ const Contacts = () => {
   return (
     <div className={styles.Contact}>
       <div className={styles.Text}>
-        <h2> Contact</h2>
+        
         <span>
           <h3>Reach Out to me</h3>
         </span>

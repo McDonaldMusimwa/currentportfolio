@@ -2,9 +2,6 @@
   width: 100%;
 }
 
-.Technologies > h2 {
-  font-size: 30px;
-}
 
 @media only screen and (max-width: 600px) {
   .Technologies {
