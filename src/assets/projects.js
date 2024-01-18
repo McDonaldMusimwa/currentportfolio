@@ -1,8 +1,8 @@
 import self from "./self.png";
 import stockifyGif from "./StockGif.gif";
-import EShop from "./eshop.jpeg";
+import EShop from "./fashion.gif";
 import Gym from "./gym.gif";
-import Calculator from "./calculator.jpeg";
+import Calculator from "./calculator.gif";
 import Bug from "../assets/bug.jpg";
 import coding from "../assets/coding.jpg";
 import Crush from "../assets/crush.jpeg";
@@ -151,7 +151,7 @@ const info = {
     },
     {
       title: "Ecommerce Shop",
-      live: "https://willowy-boba-b5e4b3.netlify.app/",
+      live: "https://fashionoza.netlify.app/",
       source: "https://github.com/McDonaldMusimwa/Ecommerce-shop",
       image: EShop,
       key: 2,

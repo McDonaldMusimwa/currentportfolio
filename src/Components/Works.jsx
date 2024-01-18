@@ -15,7 +15,8 @@ const Works = () => {
               image={project.image}
               title={project.title}
               key={project.key}
-              link={project.source}
+              link={project.live}
+              sourcecode={project.source}
             />
           );
         })}
