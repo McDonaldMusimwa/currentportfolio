@@ -33,6 +33,9 @@ const NavBar = () => {
     setMenuOpen(!menuOpened);
   };
 
+  console.log(mobile)
+  console.log(menuOpened)
+
   return (
     <nav className={styles.NavMain}>
       {mobile ? (
@@ -49,7 +52,7 @@ const NavBar = () => {
           <span className={styles.Name}>McDonald.</span>
         </div>
       ) : null}
-      {(!menuOpened || !mobile) && (
+      { !mobile && (
         <div
           className={`${styles.headermenu} ${
             menuOpened ? styles["is-open"] : ""
