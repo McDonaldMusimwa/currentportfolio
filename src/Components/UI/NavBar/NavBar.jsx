@@ -52,7 +52,8 @@ const NavBar = () => {
           <span className={styles.Name}>McDonald.</span>
         </div>
       ) : null}
-      { !mobile && (
+      
+      { !mobile || !menuOpened ? (
         <div
           className={`${styles.headermenu} ${
             menuOpened ? styles["is-open"] : ""
@@ -131,7 +132,9 @@ const NavBar = () => {
             </span>
           </ul>
         </div>
-      )}
+      ):null}
+
+
     </nav>
   );
 };
