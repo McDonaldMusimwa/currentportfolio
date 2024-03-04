@@ -32,6 +32,7 @@ const AboutLayer = () => {
             alt="button"
             className={styles.Cv}
             onClick={downloadCv}
+            
           />
         </div>
         <div className={styles.Right}>
