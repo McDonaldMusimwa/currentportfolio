@@ -3,7 +3,7 @@ import styles from "./NavBar.module.css";
 import linkedin from "../../../assets/linkedin.png";
 import twitter from "../../../assets/twitter.png";
 import youtube from "../../../assets/youtube.png";
-import Bars from "../../../assets/bars.png";
+import Bars from "../../../assets/burger.png";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
@@ -33,8 +33,7 @@ const NavBar = () => {
     setMenuOpen(!menuOpened);
   };
 
-  console.log(mobile)
-  console.log(menuOpened)
+
 
   return (
     <nav className={styles.NavMain}>
