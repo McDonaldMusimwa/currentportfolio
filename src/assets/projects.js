@@ -6,6 +6,7 @@ import Calculator from "./calculator.gif";
 import Bug from "../assets/bug.jpg";
 import coding from "../assets/coding.jpg";
 import Crush from "../assets/crush.jpeg";
+import FruitVegie from "../assets/fruitvegie.gif";
 import techbusiness from "../assets/techbusiness.jpg";
 export let colors = ["rgb(247,183,51)", "rgb(252,74,25)"];
 // export let colors = ["rgb(0,255,0)", "rgb(0,225,255)"];
@@ -68,11 +69,11 @@ const info = {
   ],
   posts: [
     {
-      key:4,
-      title:"A glance at Software Testing",
-      date:"December 14 2023",
-      image:Crush,
-      link:"https://www.linkedin.com/pulse/glance-software-testing-mcdonald-musimwa-dff8f%3FtrackingId=yAuvUI%252FeQ7W4qIRMQQHDBA%253D%253D/?trackingId=yAuvUI%2FeQ7W4qIRMQQHDBA%3D%3D"
+      key: 4,
+      title: "A glance at Software Testing",
+      date: "December 14 2023",
+      image: Crush,
+      link: "https://www.linkedin.com/pulse/glance-software-testing-mcdonald-musimwa-dff8f%3FtrackingId=yAuvUI%252FeQ7W4qIRMQQHDBA%253D%253D/?trackingId=yAuvUI%2FeQ7W4qIRMQQHDBA%3D%3D",
     },
     {
       key: 1,
@@ -103,21 +104,28 @@ const info = {
     {
       key: 1,
       title: "Languages",
-      techs: ["java", "javascript", "python", "sql", "html", "css"],
+      techs: ["c#", "typescript", "python", "sql", "html", "css"],
       description:
         "I have worked with different languages and i am always excited to learn more and expand.Open to see my regular go too languages.",
     },
     {
       key: 2,
       title: "Frameworks",
-      techs: ["react js", "node js", "express js","springboot"],
+      techs: [
+        "dotnet",
+        "next js",
+        "react js",
+        "node js",
+        "express js",
+        "bootstrap",
+      ],
       description:
         "I enjoy learning different frameworks and libraries and see their different capabilities i am always open to lean a new piece of tech.Open to see my regular go too frameworks or libraries.",
     },
     {
       key: 3,
       title: "Tools",
-      techs: ["github", "mysql", "apache", "mongodb", "vite","sqlite"],
+      techs: ["git", "mysql", "sql server", "mongodb", "sqlite"],
       description:
         "Tools are a way to make development life easy ,i always use the common in the market but always up to grab a new tool.",
     },
@@ -162,6 +170,13 @@ const info = {
       source: "https://github.com/McDonaldMusimwa/FitClub",
       image: Gym,
       key: 3,
+    },
+
+    {
+      title: "Fruit and Vegie E commerse",
+      live: "https://fruitify-nine.vercel.app/",
+      source: "https://github.com/McDonaldMusimwa/fruitify/tree/main",
+      image: FruitVegie,
     },
     {
       title: "Web application calculator",
