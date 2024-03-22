@@ -112,7 +112,8 @@ const info = {
       key: 2,
       title: "Frameworks",
       techs: [
-        "dotnet",
+        "asp.net",
+        "entity framework",
         "next js",
         "react js",
         "node js",
@@ -125,7 +126,7 @@ const info = {
     {
       key: 3,
       title: "Tools",
-      techs: ["git", "mysql", "sql server", "mongodb", "sqlite"],
+      techs: ["git", "mysql", "sql server", "mongodb", "sqlite","visual studio"],
       description:
         "Tools are a way to make development life easy ,i always use the common in the market but always up to grab a new tool.",
     },
