@@ -27,7 +27,7 @@ const NavBar = () => {
     };
   }, []);
 
-  const mobile = windowWidth <= 600; // Adjust the breakpoint according to your needs
+ const mobile = windowWidth <= 600; // Adjust the breakpoint according to your needs
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpened);
