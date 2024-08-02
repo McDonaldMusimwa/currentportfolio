@@ -4,7 +4,8 @@ import Data from "../../assets/projects";
 const Technologies = () => {
   return (
     <div className={styles.Technologies}>
-      <h3 style={{ textAlign: "çenter" }}>My Specialities</h3>
+      <h3 className="m-2" style={{ textAlign: "çenter" }}><strong>Skills</strong></h3>
+      <br />
       <div className={styles.techs}>
         {Data.skills.map((tech) => {
           return (

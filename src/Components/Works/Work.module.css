@@ -17,22 +17,19 @@
     transform: translateX(5px); /* Move right during these keyframes */
   }
 }
-.Card {
-  background-color: #9898982c;
+.workimage{
+  object-fit: contain;
   border-radius: 5px;
-  padding: 20px;
-  height: 200px;
-  width: 450px;
-  display: flex;
-  flex-direction: row;
   text-align: left;
   transition: transform 0.5s ease;
+
 }
-.Card:hover {
+
+.workimage:hover {
   animation: shake 0.1s;
 }
 .Card img {
-  width: 60%;
+  width: 40%;
   object-fit: contain;
 }
 .Text {

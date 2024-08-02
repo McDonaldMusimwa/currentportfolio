@@ -1,8 +1,13 @@
-.Home {
-  margin-left: 30.3%;
-  width: 90%;
-  align-content: center;
+.Heroicons>img{
+  margin-left: 2%;
+  width: 5%;
+  object-fit: contain;
+  
 }
+
+
+
+
 
 @media only screen and (max-width: 600px) {
   .Home {

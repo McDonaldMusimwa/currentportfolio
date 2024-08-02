@@ -1,23 +1,29 @@
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-5px);
-  }
-
-  60% {
-    transform: translateY(-2px);
-  }
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
 }
 
 .Pa {
   display: flex;
   flex-direction: row;
+  margin-left: 25%;
+  justify-content: space-between;
+
+  border-radius: 8px;
+  box-shadow: 4px 4px 25px rgb(246, 221, 221);
 }
 .Hero {
-  width: 50%;
+  width: 70%;
   height: 50vh;
   margin: 10px;
   padding: 10px;
@@ -44,17 +50,18 @@
   left: 16px;
   font-size: 35px;
   color: black;
-  animation: bounce 3s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 .contacts {
   display: flex;
   flex-direction: row;
-  font-size: 10px;
+  font-size: .5rem;
+  width: 100%;
 }
 .contacts p {
-  font-size: 13px;
-  margin: 15px;
+  font-size: .9rem;
+  margin: .1rem;
 }
 .Image {
   width: 50%;
@@ -81,6 +88,12 @@
 .line {
   width: 2px;
   height: 30px;
+}
+.stroke{
+  font-family: Arial, Helvetica, sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(19, 19, 19);
 }
 @media only screen and (max-width: 600px) {
   .Pa {

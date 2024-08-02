@@ -5,6 +5,9 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
+ 
+  const [error,setError] = useState(false);
+  const [success,setSuccess] = useState(false)
   const form = useRef();
   const [active, setActive] = useState(false);
 
@@ -20,24 +23,37 @@ const Contacts = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          
+          
+          setName("");
+        
+          setError(false)
+          setSuccess(true)
+         
         },
         (error) => {
-          console.log(error.text);
+          
+          setError(true)
+          setSuccess(false)
+          
         },
       );
       setActive(false)
+      setMessage('')
     e.target.reset();
   };
   return (
     <div className={styles.Contact}>
       <div className={styles.Text}>
         
-        <span>
+        
           <h3>Reach Out to me</h3>
-        </span>
-        <p>📱 +27 67 103 3055</p>
-        <p>📧 mcdonald.musimwa100@gmail.com</p>
+       
+        <div className="text-left">
+        <p className="m-4 p-2">📱 +27 67 103 3055</p>
+        <p className="m-4 p-2">📧 mcdonald.musimwa100@gmail.com</p>
+        </div>
+   
         <div className={styles.Socials}>
           {Data.socials.map((social) => {
             return (
@@ -48,7 +64,7 @@ const Contacts = () => {
           })}
         </div>
       </div>
-      <form ref={form} className={styles.form} onSubmit={sendEmail}>
+      <form ref={form} className={`w-full md:w-2/5 ${styles.form}`} onSubmit={sendEmail}>
         <h2>Any Work ?</h2>
 
         <input type="text" name="name" id="clientName" placeholder="Name" />
@@ -70,6 +86,8 @@ const Contacts = () => {
           <img src={arrow} alt="arrow" />
         </button>
       </form>
+      {error && <p className="text-red-500 font-bold">{message}</p>}
+      {success && <p className="text-green-500 font-bold">{message}</p>}
     </div>
   );
 };
