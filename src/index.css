@@ -8,7 +8,7 @@
 
   color-scheme: light dark;
 
-  background-color: #242424;
+  background-color: #faf7f7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 a {
   font-weight: 500;
   color: #646cff;

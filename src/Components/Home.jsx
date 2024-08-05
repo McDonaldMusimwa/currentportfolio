@@ -15,27 +15,27 @@ import git from "../assets/git.svg";
 //import { width } from "@fortawesome/free-regular-svg-icons/faAddressBook";
 const Home = () => {
   return (
-    <div className="w-9/12 mx-4">
+    <div className="w-full mx-4 md:w-full p-4" id="home">
 
-  
+
       <Hero />
-      
-      <div className={`flex m-2 w-full h-10 ml-80 ${styles.Heroicons}`}>
-          
+
+      <div className={`flex m-2 w-6/12 md:w-1/6 h-10 lg:ml-80 ${styles.Heroicons}`}>
+
         <img className="w-2" src={sql} alt="sql icon" />
-        <img className="w-2"  src={typescript} alt="typescript" />
-         <img className="w-2"  src={javascript} alt="javascript" />
-            <img src={python} alt="python icon" />
-        <img className="w-2"  src={csharp} alt="cee sharp" />
-        <img src={html} alt="html icon"/>
+        <img className="w-2" src={typescript} alt="typescript" />
+        <img className="w-2" src={javascript} alt="javascript" />
+        <img src={python} alt="python icon" />
+        <img className="w-2" src={csharp} alt="cee sharp" />
+        <img src={html} alt="html icon" />
         <img src={css} alt="css icon" />
         <img src={tailwind} alt="tailwind icon" />
-        <img   src={react} alt="react icon" />
-         <img className="w-2"src={nextjs} alt="next js" />
-            <img src={dotnet} alt="dotnet icon" />
+        <img src={react} alt="react icon" />
+        <img className="w-2" src={nextjs} alt="next js" />
+        <img src={dotnet} alt="dotnet icon" />
         <img className="w-2" src={git} alt="cee sharp" />
-   
-       
+
+
       </div>
     </div>
   )

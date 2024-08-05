@@ -14,11 +14,11 @@ const Hero = () => {
     navigate("/contacts");
   };
   return (
-    <div className={`${styles.Pa} mx-7 w-full bg-blue-100 shadow-lg`}>
-      <div className={styles.Hero}>
-        <div className={styles.container}>
+    <div className={`${styles.Pa} mx-7 lg:w-full bg-blue-100 shadow-lg`}>
+      <div className={`${styles.Hero} md:w-full`}>
+        <div className={`${styles.container}`}>
           <img src={vector} alt="design" className={styles.vector}/>
-          <div className={styles.bottomleft}>
+          <div className={`${styles.bottomleft} md:text-sm`}>
             MY NAME IS <strong className={styles.stroke}>MCDONALD MUSIMWA...</strong>
           </div>
         </div>
@@ -27,20 +27,20 @@ const Hero = () => {
             <strong className={styles.stroke}>Software developer </strong>based in{" "}
             <strong>CapeTown</strong>
           </div>
-          <img
-            className='w-full'
+          <button
+            className={`md:w-6 md:w-4 p-4 ${styles.button}`}
             src={button}
             alt="button"
             onClick={navigateToContact}
-         
-            
-          />
+         >
+            Talk to me
+            </button>
           
         </>
       </div>
 
-      <div className={`${styles.Image} p-4`}>
-        <img className='w-full' src={profile} alt="profile" />
+      <div className={`${styles.Image}`}>
+        <img  src={profile} alt="profile" />
         <div className={styles.socials}>
           <a
             href="https://www.linkedin.com/in/mcdonaldmusimwa"

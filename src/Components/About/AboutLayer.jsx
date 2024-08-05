@@ -18,11 +18,11 @@ const AboutLayer = () => {
   return (
     <>
       <div className={styles.Aboutlayer}>
-        <div className={styles.Left}>
+        <div className={`${styles.Left} md:text-center`}>
           <span>
             Nice to meet you!{" "}
             <h3>
-              <strong>Welcome to ...</strong>{" "}
+              <strong>Great to have you visit me ...</strong>{" "}
             </h3>
           </span>
           <img src={profile} alt="profile" className={styles.Profile} />
@@ -49,7 +49,7 @@ const AboutLayer = () => {
         <div className={styles.Right}>
           <h3 className="text-center"><strong>About Me</strong></h3>
           <hr />
-          <p className="p-1 text-left">
+          <p className="p-1 text-left p-4">
             Hi there, <strong>McDonald</strong> here. My journey into software programming has been both interesting and traditional. If someone had told me four years ago that I’d be tinkering with computers, I would have laughed it off.
 
             My interest in computer programming was sparked by boredom with routine. I was saving up funds to take accounting exams, but after three years of struggling to save enough and spending my evenings watching TV, I needed a change. I started reading about bitcoins, and although I didn't dive into Bitcoin itself, learning about blockchain technology ignited my curiosity and led me to web development. Finding out about the low to no cost of studying tech was my “aha” moment, and I took the initiative to study with freeCodeCamp.

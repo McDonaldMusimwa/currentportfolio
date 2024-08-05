@@ -10,7 +10,7 @@ const Work = (props) => {
 
 
 
-      <h3 className='m-1 p-2'><strong>{props.title}</strong></h3>
+      <h3 className='m-1 p-2'>{props.title}</h3>
 
       <p>{props.description}</p>
       <div className='flex justify-between m-4 space-x-3'>

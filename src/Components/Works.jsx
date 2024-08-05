@@ -4,7 +4,7 @@ import info from '../assets/projects'
 
 const Works = () => {
   return (
-    <div className='ml-80'>
+    <div className={`${styles.Works} lg:ml-80`} id="works">
       <strong>
         <h3>Project Experience</h3>
         <hr/>
