@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 30% 30% 30%;
   gap: 50px;
-  margin: 5% 20%;
+  margin: 5% 10%;
   width: 90%;
 }
 /* Media Query for Tablets */

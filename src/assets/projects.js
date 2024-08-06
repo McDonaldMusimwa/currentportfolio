@@ -1,13 +1,13 @@
 import self from "./self.png";
-import stockifyGif from "./StockGif.gif";
-import EShop from "./fashion.gif";
-import Gym from "./gym.gif";
-import Calculator from "./calculator.gif";
+
+import comfyhouse from '../assets/comfyhouse.jpg'
+import stockmanagement from "../assets/stockmanagement.jpg"
 import Bug from "../assets/bug.jpg";
 import coding from "../assets/coding.jpg";
 import Crush from "../assets/crush.jpeg";
-import FruitVegie from "../assets/fruitvegie.gif";
+
 import techbusiness from "../assets/techbusiness.jpg";
+
 export let colors = ["rgb(247,183,51)", "rgb(252,74,25)"];
 // export let colors = ["rgb(0,255,0)", "rgb(0,225,255)"];
 
@@ -126,7 +126,7 @@ const info = {
     {
       key: 3,
       title: "Tools",
-      techs: ["git", "mysql", "sql server", "mongodb", "sqlite","visual studio"],
+      techs: ["git", "mysql", "sql server", "mongodb", "sqlite", "visual studio"],
       description:
         "Tools are a way to make development life easy ,i always use the common in the market but always up to grab a new tool.",
     },
@@ -155,38 +155,27 @@ const info = {
       title: "Stock management",
       live: "https://mcdonaldmusimwa.github.io/stockifylandingpage/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
       source: "https://mcdonaldmusimwa.github.io/stockifylandingpage/", // this should be a link to the **repository** of the project, where the code is hosted.
-      image: stockifyGif,
+      image: stockmanagement,
       key: 1,
+      description: "After mastering the basics and building medium-sized websites, I craved a challenge that would push my skills from design through to deployment. My background in accounting, dealing with stock costing, reconciliation, and stock-outs, sparked an idea: create a stock management application to streamline these processes. This led to the development of an experimental app that uses the FIFO (First In, First Out) method for inventory management. The application revolutionizes how businesses track stock levels, manage orders, and maintain efficient inventory turnover.",
+      build_process: "The journey began with building the application using React and Node.js, complemented by MongoDB for its flexible data storage capabilities. MongoDB's ability to embed related data made it a perfect fit. To ensure a robust schema, I utilized Mongoose. As I delved into Next.js, I decided to migrate the application to leverage its powerful features like NextAuth, seamless routing, server-side rendering, and streaming. This transition not only enhanced the app's performance but also opened new avenues for scalability and user experience.Next.js also eliminated the need for a separate server codebase. This allowed me to leverage React Server Components for seamless database interactions.",
+      challenges: "I am no designer by any stretch of the imagination, so the initial web app was not aesthetically pleasing. As a result, I rebuilt the entire UI. One of the biggest challenges was developing algorithms to deduct ordered products from the relevant stock while maintaining the FIFO design. This required careful planning and testing to ensure accuracy and efficiency.Authentication was another significant challenge. I initially used a third-party package, but my implementation was flawed. Migrating to Next.js was the best decision as it is a full-fledged framework that comes with built-in authentication features.You can view the source code.",
+
+      tech: [
+        "Next Js", "React Js", "Mongo DB", "Figma", "Visual Studio Code"
+      ]
     },
     {
       title: "Ecommerce Shop",
       live: "https://fashionoza.netlify.app/",
       source: "https://github.com/McDonaldMusimwa/Ecommerce-shop",
-      image: EShop,
+      image: comfyhouse,
       key: 2,
-    },
-    {
-      title: "Fit Club Website",
-      live: "https://mcdonaldmusimwa.github.io/FitClub/",
-      source: "https://github.com/McDonaldMusimwa/FitClub",
-      image: Gym,
-      key: 3,
-    },
+      description: "A mobile application designed for creating and managing invoices. The application allows users to create invoices on the go, manage clients, and track payment statuses.",
+      build_process: "The application is developed using Flutter for a cross-platform mobile experience. Firebase is used for authentication and real-time database management. The app integrates with various payment gateways to facilitate online payments.",
 
-    {
-      title: "Fruit and Vegie E commerse",
-      live: "https://fruitify-nine.vercel.app/",
-      source: "https://github.com/McDonaldMusimwa/fruitify/tree/main",
-      image: FruitVegie,
-    },
-    {
-      title: "Web application calculator",
-      live: "https://mcdonaldmusimwa.github.io/CalculatorWithReact/",
-      source: "https://github.com/McDonaldMusimwa/CalculatorWithReact",
-      image: Calculator,
-      key: 4,
-    },
-  ],
+      tech: ["React Native", "Firebase", "Behance"]
+    }],
 };
 
 export default info;

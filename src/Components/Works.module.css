@@ -1,8 +1,5 @@
-.Works {
-  margin-left: 30.3%;
-  height: 80vh;
-  width: 70vw;
-  align-content: center;
+.Works{
+  margin-left: 20%;
 }
 
 .Works p {
@@ -11,7 +8,7 @@
 
 .Projects {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   gap: 50px;
 }
 

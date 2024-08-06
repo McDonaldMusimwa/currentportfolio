@@ -3,7 +3,7 @@ import Contacts from './Contact/Contacts';
 
 const Contact = () => {
   return (
-    <div className={styles.Contact}>
+    <div className='ml-80' id='contact'>
       <Contacts />
       </div>
   )

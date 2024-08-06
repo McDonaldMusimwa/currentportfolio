@@ -1,7 +1,7 @@
 .Aboutlayer {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 90% 10%;
+  
   margin: 1% 0 0% 0%;
   width: 100%;
 }
@@ -74,7 +74,9 @@
 }
 
 /* For screens smaller than 768px (e.g., tablets and mobile) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { .Profile{
+  width: auto;
+}
   .Aboutlayer {
     width: 100%;
     padding: 5px;
@@ -85,10 +87,14 @@
 
   .Left,
   .Right {
+   
     width: 100%; /* Full width for left and right sections on smaller screens */
     grid-column: auto; /* Auto placement in the grid for smaller screens */
   }
 
+  .Left img{
+    justify-items: center;
+  }
   .Cv {
     margin: 10px 0; /* Adjust margin for spacing on smaller screens */
   }
