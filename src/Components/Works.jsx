@@ -11,6 +11,7 @@ const Works = () => {
       </strong>
       <div className={`${styles.Projects}`}>
         {info.portfolio.map((project) => {
+          {console.log(project.live)}
           return (
             <Work
               image={project.image}
@@ -22,6 +23,7 @@ const Works = () => {
               description={project.description}
               tech={project.tech}
               challenges={project.challenges}
+              wip={project.wip}
             />
           );
         })}

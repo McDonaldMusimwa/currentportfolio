@@ -30,10 +30,10 @@ const Work = (props) => {
    
       <h3 className='m-1 p-2'>Challenges</h3>
       <p className='text-black'>{props.challenges}</p>
-
+        {props.wip ? <em>Work in Progress not yet live</em> : null}
           <div className='flex text-black'>
-          <a href={props.source} className='m-2'><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Source Code</button></a>
-          <a className='m-2' href={props.live}><button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`} >Live</button></a>
+          <a href={props.sourcecode} className='m-2'><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Source Code</button></a>
+          <a className='m-2' href={props.link}><button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`} >Live</button></a>
           </div>
 
     </div>
