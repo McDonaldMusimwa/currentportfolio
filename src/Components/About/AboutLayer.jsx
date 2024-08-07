@@ -39,7 +39,7 @@ const AboutLayer = () => {
             <strong>Community</strong>
             <hr />
           </h3>
-          <p className="p-1">
+          <p className="p-1 text-black">
             Since beginning my journey in software development, I have spent a lot of time learning solo and collaborating with other students in the USA. After the lockdown, I discovered developer meetups around Cape Town. I've taken an interest in different communities and building social coding networks. For example, during my learning of <strong>C# </strong>and <strong>.NET</strong>, I joined the <strong>CPTMSDUG </strong>group, where we share new features and advancements in C# and other microsoft products. I am also a big fan of <strong>React </strong>and i foresee a time where I contribute to the local React group.
 
           </p>
@@ -49,7 +49,7 @@ const AboutLayer = () => {
         <div className={styles.Right}>
           <h3 className="text-center"><strong>About Me</strong></h3>
           <hr />
-          <p className="p-1 text-left p-4">
+          <p className="p-1 text-left p-4 text-black">
             Hi there, <strong>McDonald</strong> here. My journey into software programming has been both interesting and traditional. If someone had told me four years ago that I’d be tinkering with computers, I would have laughed it off.
 
             My interest in computer programming was sparked by boredom with routine. I was saving up funds to take accounting exams, but after three years of struggling to save enough and spending my evenings watching TV, I needed a change. I started reading about bitcoins, and although I didn't dive into Bitcoin itself, learning about blockchain technology ignited my curiosity and led me to web development. Finding out about the low to no cost of studying tech was my “aha” moment, and I took the initiative to study with freeCodeCamp.
@@ -61,7 +61,7 @@ const AboutLayer = () => {
         </div>
      
       </div>
-      <div className={styles.Footer}></div>
+     
     </>
   );
 };

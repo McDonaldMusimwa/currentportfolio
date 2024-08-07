@@ -46,16 +46,16 @@ const Hero = () => {
             href="https://www.linkedin.com/in/mcdonaldmusimwa"
             title="linkedin icons"
           >
-            <img className={styles.icon} src={linkedin} />
+            <img className={styles.icon} src={linkedin} alt="linkedin icon"/>
           </a>
-          <a href="https://twitter.com/Mcdonal70309191" title="linkedin icons">
-            <img className={styles.icon} src={twitter} />
+          <a href="https://twitter.com/Mcdonal70309191" title="twittericons">
+            <img className={styles.icon} src={twitter} alt="twitter icon" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCjiAsiaKGKNKSck8i3iPZig"
-            title="youtube icons"
+            title="youtube icon"
           >
-            <img className={styles.icon} src={youtube} />
+            <img className={styles.icon} src={youtube} alt="youtube icon" />
           </a>
           <img className={styles.line} src={line} alt="line" />
         </div>

@@ -13,27 +13,27 @@ const Work = (props) => {
       <h3 className='m-1 p-2'>{props.title}</h3>
 
       <p>{props.description}</p>
-      <div className='flex justify-between m-4 space-x-3'>
-        <img src={props.image} alt={props.title} className={`w-6/12 ${styles.workimage}`} />
-        <ul className='text-center m-2'>
-          <h4><strong>Tech stack used</strong></h4>
-         <strong> <hr></hr></strong>
-          {props.tech.map((item, index) => (
-            <li key={index} className='block'>{item}</li>
-          ))}
-        </ul>
-      </div>
+      <div className={styles.work}>
+      <img src={props.image} alt={props.title} className={styles.workimage} />
+      <ul className='text-center md:text-left m-2 text-black'>
+        <h4><strong>Tech stack used</strong></h4>
+        <strong> <hr></hr></strong>
+        {props.tech.map((item, index) => (
+          <li key={index} className='block'>{item}</li>
+        ))}
+      </ul>
+    </div>
 
 
       <h3 className='m-1 p-2'>Thought Process</h3>
       <p>{props.build_process}</p>
    
       <h3 className='m-1 p-2'>Challenges</h3>
-      <p>{props.challenges}</p>
+      <p className='text-black'>{props.challenges}</p>
 
-          <div className='flex'>
+          <div className='flex text-black'>
           <a href={props.source} className='m-2'><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Source Code</button></a>
-          <a className='m-2' href={props.live}><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' >Live</button></a>
+          <a className='m-2' href={props.live}><button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`} >Live</button></a>
           </div>
 
     </div>

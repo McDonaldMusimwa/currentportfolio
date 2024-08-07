@@ -1,30 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap'); 
+*{
+font-family: "Dosis", sans-serif;
+}
 
 .Text {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
+
 .Text span {
   margin: 15px 0;
   font-size: 30px;
 }
+
 .Text p {
   line-height: 0;
   font-size: 20px;
 }
+
 .form {
   background: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36));
   padding: 30px;
-/* Adjust the width as needed */
+  /* Adjust the width as needed */
 }
 
 .form h2 {
-  color: white; /* Set the text color for the heading */
+  color: white;
+  /* Set the text color for the heading */
 }
+
 .form input::placeholder,
 .form textarea::placeholder {
-  color: white; /* Set the color for the placeholder text */
+  color: white;
+  /* Set the color for the placeholder text */
 }
+
 .form input,
 .form textarea {
   display: inline;
@@ -32,20 +43,25 @@
   padding: 8px;
   margin: 10px 0;
   border: none;
-  border-bottom: 2px solid white; /* Add a bottom border */
-  background: transparent; /* Make the background transparent */
-  color: rgb(255, 255, 255); /* Set the text color */
+  border-bottom: 2px solid white;
+  /* Add a bottom border */
+  background: transparent;
+  /* Make the background transparent */
+  color: rgb(255, 255, 255);
+  /* Set the text color */
 }
 
 .form button {
-  background: white; /* Set the button background color */
-  color: #333; /* Set the button text color */
+  background: white;
+  /* Set the button background color */
+  color: #333;
+  /* Set the button text color */
   padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
 
-.form button > img {
+.form button>img {
   width: 10px;
 }
 
@@ -55,6 +71,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .Socials a {
   text-decoration: none;
   color: black;
@@ -64,12 +81,20 @@
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
   .Contact {
+    margin-left: 0;
+
     
-    gap: 10%;
-    width: 100%;
-    padding: 20px;
-   
+   margin-top: 35%;
+    overflow: hidden;
+    width: 95%;
+
+
+    /* Change to a single column layout on smaller screens */
+    gap: 5%;
+    /* Adjust gap for smaller screens */
+
   }
+
   h2,
   h3 {
     overflow: hidden;
@@ -78,54 +103,56 @@
   }
 
   .form input,
-.form textarea {
-  display: inline;
-  width: 90%;
-  padding: 8px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid white; /* Add a bottom border */
-  background: transparent; /* Make the background transparent */
-  color: rgb(255, 255, 255); /* Set the text color */
-}
-  .Contact {
-    overflow-y: hidden;
+  .form textarea {
+    display: inline;
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid white;
+    /* Add a bottom border */
+    background: transparent;
+    /* Make the background transparent */
+    color: rgb(255, 255, 255);
+    /* Set the text color */
+  }
 
-    width: 95%;
-    padding: 5px;
-    grid-template-columns: 100%; /* Change to a single column layout on smaller screens */
-    gap: 5%; /* Adjust gap for smaller screens */
-    margin: 10px auto 5px; /* Remove left margin for full-width on smaller screens */
-  }
   .Text {
-    height: 100%;
+   padding: 0;
   }
+
   .Text span {
-    margin: 5px 0;
+
     color: black;
-    font-size: 24px; /* Adjust font size for smaller screens */
+    font-size: 20px;
+    /* Adjust font size for smaller screens */
   }
 
   .Text p {
     overflow-y: hidden;
     line-height: 1;
     color: black;
-    font-size: 14px; /* Adjust font size for smaller screens */
-    margin: 3px; /* Add margin for spacing */
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+    margin: 1px;
+    /* Add margin for spacing */
   }
 
   .form {
     margin-top: 10px;
-    height: 50vh;
+    height: 100%;
     padding: 5px;
-    width: 98%; /* Adjust the form width for full-width on smaller screens */
+    width: 100%;
+    /* Adjust the form width for full-width on smaller screens */
   }
+
   .Socials {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
   }
+
   .Socials a {
     text-decoration: none;
     color: black;

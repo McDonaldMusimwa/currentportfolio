@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./NavBar.module.css";
-import Bars from "../../../assets/burger.png";
+
 import { NavLink, useNavigate } from "react-router-dom";
 import { VscHome, VscInfo, VscBriefcase, VscMail } from "react-icons/vsc";
 /*
@@ -135,7 +135,7 @@ const NavBar = () => {
   };
 
   return (<>
-    {mobile ? (<nav className={styles.NavBar}>
+    {mobile ? (<nav className={`bg-black-500 text-white ${styles.navBar}`}>
 
 
 
@@ -144,22 +144,33 @@ const NavBar = () => {
           <span  onClick={navigateToHome}>McDonald.</span>
         </li>
         <li >
-          <NavLink to="home" className={({ isActive }) => isActive ? "text-yellow-400" : undefined}>
+        <NavLink 
+        to="/" 
+        className={({ isActive }) => 
+          `${styles.navlink} ${isActive ? 'text-yellow-400' : ''}`
+        }
+      >
             <VscHome size={24} />
           </NavLink>
         </li>
         <li >
-          <NavLink to="about" className={({ isActive }) => isActive ? "text-yellow-400" : undefined}>
+          <NavLink to="about"  className={({ isActive }) => 
+            `${styles.navlink} ${isActive ? 'text-yellow-400' : ''}`
+          }>
             <VscInfo size={24} />
           </NavLink>
         </li>
         <li >
-          <NavLink to="works" className={({ isActive }) => isActive ? "text-yellow-400" : undefined}>
+          <NavLink to="works"  className={({ isActive }) => 
+            `${styles.navlink} ${isActive ? 'text-yellow-400' : ''}`
+          }>
             <VscBriefcase size={24} />
           </NavLink>
         </li>
         <li >
-          <NavLink to="contacts" className={({ isActive }) => isActive ? "text-yellow-400" : undefined}>
+          <NavLink to="contacts"  className={({ isActive }) => 
+            `${styles.navlink} ${isActive ? 'text-yellow-400' : ''}`
+          }>
             <VscMail size={24} />
           </NavLink>
         </li>
@@ -177,7 +188,7 @@ const NavBar = () => {
           <h2 onClick={navigateToHome}>McDonald.</h2>
           <NavLink
             onClick={() => setMenuOpen(!menuOpened)}
-            to="home"
+            to="/"
             className={({ isActive }) => isActive ? styles.active : undefined}
           >
             Home
@@ -210,6 +221,7 @@ const NavBar = () => {
       </div>
 
 
+    
 
     </nav>)}
 
