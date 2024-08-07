@@ -5,7 +5,7 @@ import Services from './Components/Services';
 import Works from './Components/Works';
 import Blogs from './Components/Blogs';
 import Contact from './Components/Contact'
-
+import Footer from './Components/UI/Footer/Footer';
 //import SignUpForm from './Components/Logins/SignUp';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/UI/NavBar/NavBar';
@@ -28,7 +28,7 @@ function App() {
         <Route path='contacts' element={<Contact />}></Route>
       </Routes>
 
-
+<Footer/>
     </Router >
   )
 }

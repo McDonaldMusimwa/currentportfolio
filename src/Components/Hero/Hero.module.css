@@ -45,6 +45,13 @@ grid-template-columns: 50% 50%;
   line-height: 1;
 }
 
+.button{
+  background: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36));
+}
+.button:hover{
+  background: transparent;
+  color: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36)) ;
+}
 .bottomleft {
   position: absolute;
   top: 8px;

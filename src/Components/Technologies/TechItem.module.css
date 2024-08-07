@@ -57,7 +57,7 @@ h3 > img {
 
   .Click {
     margin: 20px 10px;
-    width: 40px; /* Adjust width for mobile */
+    width: 20%; /* Adjust width for mobile */
     padding: 20px;
   }
 }

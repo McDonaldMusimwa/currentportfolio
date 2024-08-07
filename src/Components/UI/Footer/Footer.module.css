@@ -1,0 +1,8 @@
+.Footer{
+    margin-top: 2%;
+    background: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36));
+    color: rgb(13, 13, 13);
+    position:absolute;
+    justify-content: baseline;
+    z-index: -100;
+}

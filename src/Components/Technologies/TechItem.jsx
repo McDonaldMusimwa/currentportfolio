@@ -24,7 +24,7 @@ const TechItem = (props) => {
       <h3>
         <img src={dot} alt="dot" /> {props.title}
       </h3>
-      <div>
+      <div className="text-black">
         {props.description}
 
         <div className={styles.List}>
@@ -48,19 +48,23 @@ const TechItem = (props) => {
           {table ? techList : null}</div>
       </div>
       {table ? (
+        <div  onClick={TableHandler().close}>
         <img
           className={styles.Click}
           src={MinusCircle}
           alt="click"
-          onClick={TableHandler().close}
+         
         />
+        </div>
       ) : (
+        <div className="border-2 border-gray-400 p-2 rounded-full" onClick={TableHandler().open}>
         <img
           className={styles.Click}
           src={PlusCircle}
           alt="click"
-          onClick={TableHandler().open}
+          
         />
+        </div>
       )}
     </div>
   );

@@ -1,37 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+  font-family: "Dosis", sans-serif;
+}
+
 @keyframes shake {
+
   0%,
   100% {
-    transform: translateX(0); /* Start and end with no translation */
+    transform: translateX(0);
+    /* Start and end with no translation */
   }
+
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: translateX(-5px); /* Move left during these keyframes */
+    transform: translateX(-5px);
+    /* Move left during these keyframes */
   }
+
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(5px); /* Move right during these keyframes */
+    transform: translateX(5px);
+    /* Move right during these keyframes */
   }
 }
-.workimage{
+
+.work {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5%;
+  margin: 2%;
+}
+
+.workimage {
   object-fit: contain;
   border-radius: 5px;
   text-align: left;
   transition: transform 0.5s ease;
-
+  width: 100%;
 }
 
 .workimage:hover {
   animation: shake 0.1s;
 }
+
 .Card img {
   width: 40%;
   object-fit: contain;
 }
+
 .Text {
   width: 40%;
   height: 100%;
@@ -41,9 +63,11 @@
   display: flex;
   flex-direction: column;
 }
+
 .Text img {
   width: 20px;
 }
+
 .Text p {
   font-size: 20px;
   font-weight: bolder;
@@ -52,32 +76,58 @@
 
 /* For screens smaller than 768px (e.g., tablets and mobile) */
 @media only screen and (max-width: 768px) {
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  .workimage {
+    object-fit: contain;
+    border-radius: 5px;
+    text-align: left;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+
   .Card {
     margin: 10px 10px;
-    height: auto; /* Adjust height as needed for responsiveness */
-    width: 100%; /* Full width for smaller screens */
-    flex-direction: column; /* Stack items vertically for smaller screens */
+    height: auto;
+    /* Adjust height as needed for responsiveness */
+    width: 100%;
+    /* Full width for smaller screens */
+    flex-direction: column;
+    /* Stack items vertically for smaller screens */
   }
+
   .Card:hover {
     transition: z-index 0.3s ease;
   }
+
   .Card img {
-    width: 100%; /* Full width for the image on smaller screens */
+    width: 100%;
+    /* Full width for the image on smaller screens */
   }
 
   .Text {
-    width: 100%; /* Full width for the text on smaller screens */
-    height: auto; /* Adjust height as needed for responsiveness */
-    padding-right: 0; /* Remove padding on smaller screens */
-    justify-content: center; /* Center content vertically on smaller screens */
+    width: 100%;
+    /* Full width for the text on smaller screens */
+    height: auto;
+    /* Adjust height as needed for responsiveness */
+    padding-right: 0;
+    /* Remove padding on smaller screens */
+    justify-content: center;
+    /* Center content vertically on smaller screens */
   }
 
   .Text img {
-    width: 15px; /* Adjust image size for smaller screens */
+    width: 15px;
+    /* Adjust image size for smaller screens */
   }
 
   .Text p {
-    font-size: 18px; /* Adjust font size for smaller screens */
+    font-size: 15px;
+    /* Adjust font size for smaller screens */
   }
 }
 
