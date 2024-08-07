@@ -153,8 +153,8 @@ const info = {
     // This is where your portfolio projects will be detailed
     {
       title: "Stock management",
-      live: "https://mcdonaldmusimwa.github.io/stockifylandingpage/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: "https://mcdonaldmusimwa.github.io/stockifylandingpage/", // this should be a link to the **repository** of the project, where the code is hosted.
+      live: "https://github.com/McDonaldMusimwa/stockifynextjs.git", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+      source: "https://github.com/McDonaldMusimwa/stockifynextjs.git", // this should be a link to the **repository** of the project, where the code is hosted.
       image: stockmanagement,
       key: 1,
       description: "After mastering the basics and building medium-sized websites, I craved a challenge that would push my skills from design through to deployment. My background in accounting, dealing with stock costing, reconciliation, and stock-outs, sparked an idea: create a stock management application to streamline these processes. This led to the development of an experimental app that uses the FIFO (First In, First Out) method for inventory management. The application revolutionizes how businesses track stock levels, manage orders, and maintain efficient inventory turnover.",
@@ -163,7 +163,8 @@ const info = {
 
       tech: [
         "Next Js", "React Js", "Mongo DB", "Figma", "Visual Studio Code"
-      ]
+      ],
+      wip:"yes"
     },
     {
       title: "Ecommerce Shop",
@@ -171,10 +172,10 @@ const info = {
       source: "https://github.com/McDonaldMusimwa/Ecommerce-shop",
       image: comfyhouse,
       key: 2,
-      description: "A mobile application designed for creating and managing invoices. The application allows users to create invoices on the go, manage clients, and track payment statuses.",
-      build_process: "The application is developed using Flutter for a cross-platform mobile experience. Firebase is used for authentication and real-time database management. The app integrates with various payment gateways to facilitate online payments.",
-
-      tech: ["React Native", "Firebase", "Behance"]
+      description: "This is a fictitious e-commerce convenience store. The motivation behind building this app was to learn and apply vanilla JavaScript without relying on frameworks. I also practiced using async functions and consuming third-party REST APIs.",
+      build_process: "The app served as a challenge to produce a product within a restricted timeline and limited resources. Consequently, I used vanilla JavaScript and CSS. I consumed third-party REST APIs and rendered the data on the frontend. To minimize API calls, I stored the API responses in local storage and read from there.",
+      tech: ["Vanilla JavaScript", "CSS", "HTML", "Local Storage"],
+      challenges:"Building an e-commerce convenience store with vanilla JavaScript and third-party REST APIs presents several challenges. Managing asynchronous operations and handling API integration can be complex, requiring robust error handling and understanding of data formats. Storing data efficiently in local storage, ensuring responsive design, and optimizing performance are crucial for a smooth user experience. Additionally ensuring accessibility and cross-browser compatibility further complicates the development process. Overall, careful planning and testing are essential to overcome these challenges and deliver a functional, user-friendly application."
     }],
 };
 

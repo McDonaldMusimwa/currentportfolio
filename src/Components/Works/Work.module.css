@@ -33,7 +33,7 @@
 .work {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 5%;
+  gap: 2%;
   margin: 2%;
 }
 
