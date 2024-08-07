@@ -15,7 +15,7 @@ import git from "../assets/git.svg";
 //import { width } from "@fortawesome/free-regular-svg-icons/faAddressBook";
 const Home = () => {
   return (
-    <div className="w-full mx-4 md:w-full p-4" id="home">
+    <div className="w-full mx-4 md:w-full p-4 my-10" id="home">
 
 
       <Hero />
