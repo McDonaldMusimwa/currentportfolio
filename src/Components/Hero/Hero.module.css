@@ -1,16 +1,18 @@
 @keyframes float {
-	0% {
-		
-		transform: translatey(0px);
-	}
-	50% {
-		
-		transform: translatey(-20px);
-	}
-	100% {
-		
-		transform: translatey(0px);
-	}
+  0% {
+
+    transform: translatey(0px);
+  }
+
+  50% {
+
+    transform: translatey(-20px);
+  }
+
+  100% {
+
+    transform: translatey(0px);
+  }
 }
 
 .Pa {
@@ -18,13 +20,14 @@
   flex-direction: row;
   margin-left: 20%;
   justify-content: space-between;
-display: grid;
-grid-template-columns: 50% 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
   border-radius: 8px;
   box-shadow: 4px 4px 25px rgb(246, 221, 221);
 }
+
 .Hero {
- 
+
   height: 50vh;
   margin: 10px;
   padding: 10px;
@@ -33,9 +36,11 @@ grid-template-columns: 50% 50%;
 .ContactMe:hover {
   cursor: pointer;
 }
+
 .Hero img {
   width: 50%;
 }
+
 .container {
   position: relative;
   text-align: left;
@@ -45,13 +50,15 @@ grid-template-columns: 50% 50%;
   line-height: 1;
 }
 
-.button{
+.button {
   background: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36));
 }
-.button:hover{
+
+.button:hover {
   background: transparent;
-  color: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36)) ;
+  color: linear-gradient(to right, rgb(164, 106, 247), rgb(243, 153, 36));
 }
+
 .bottomleft {
   position: absolute;
   top: 8px;
@@ -67,25 +74,31 @@ grid-template-columns: 50% 50%;
   font-size: .5rem;
   width: 100%;
 }
+
 .contacts p {
   font-size: .9rem;
   margin: .1rem;
 }
+
 .Image {
   width: 50%;
   display: flex;
   flex-direction: row;
 }
-.Image img{
-    object-fit: contain;
+
+.Image img {
+  object-fit: contain;
   width: 100%;
 }
+
 .image {
   width: 100%;
 }
+
 .Home {
   width: 80%;
 }
+
 .Text {
   margin: 10px 0 20px 0;
 }
@@ -94,41 +107,50 @@ grid-template-columns: 50% 50%;
   display: flex;
   flex-direction: column;
 }
+
 .icon {
   width: 20px;
 }
+
 .line {
   width: 2px;
   height: 30px;
 }
-.stroke{
+
+.stroke {
   font-family: Arial, Helvetica, sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(19, 19, 19);
 }
+
 @media only screen and (max-width: 600px) {
 
-  .vector{
+  .vector {
     width: 50px;
   }
+
   .Pa {
-   
+
     z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 2px;
-    
-  } 
-  .Hero{
+    margin: 4rem 2px;
+background-color: transparent;
+  }
+
+  .Hero {
     width: 100%;
     height: 100%;
     margin: 0;
+    background-color: white;
   }
-  .Hero img{
+
+  .Hero img {
     width: 20%;
   }
+
   .bottomleft {
     position: absolute;
     top: 5px;
@@ -137,37 +159,48 @@ grid-template-columns: 50% 50%;
     color: black;
     padding: 12px;
   }
-.Text{
-  font-size: 25px;
-  padding: 10px;
-}
+
+  .Text {
+    font-size: 25px;
+    padding: 10px;
+  }
+
   .Hero img {
-    width: 100%; /* Adjust image width for smaller screens */
+    width: 100%;
+    /* Adjust image width for smaller screens */
   }
 
   .container {
     font-size: 10%;
-    width: 100%; /* Adjust width for smaller screens */
-    height: auto; /* Allow the height to adjust based on content */
+    width: 100%;
+    /* Adjust width for smaller screens */
+    height: auto;
+    /* Allow the height to adjust based on content */
   }
-  .container img{
+
+  .container img {
     width: 80%;
   }
 
   .contacts {
-    flex-direction: column; /* Change to a column layout on smaller screens */
+    flex-direction: column;
+    /* Change to a column layout on smaller screens */
   }
 
   .contacts p {
-    margin: 5px; /* Adjust margin for smaller screens */
+    margin: 5px;
+    /* Adjust margin for smaller screens */
   }
 
   .Image {
-    width: 100%; /* Adjust width for smaller screens */
+    background-color: white;
+    width: 100%;
+    /* Adjust width for smaller screens */
   }
 
 
   .Home {
-    width: 100%; /* Adjust width for smaller screens */
+    width: 100%;
+    /* Adjust width for smaller screens */
   }
 }
