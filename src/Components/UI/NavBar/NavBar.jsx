@@ -141,7 +141,7 @@ const NavBar = () => {
 
       <ul className={styles.navList}>
         <li>
-          <span  onClick={navigateToHome}>McDonald.</span>
+          <span  onClick={navigateToHome} className={styles.Name}>McDonald.</span>
         </li>
         <li >
         <NavLink 
