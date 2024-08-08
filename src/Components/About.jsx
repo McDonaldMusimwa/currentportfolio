@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div className={`ml-80 md:w-full md:m-4 md:ml-0 ${styles.About}`} id='about'>
       <AboutLayer />
+      <div className={styles.Line}></div>
       <Technologies />
 
 
